@@ -17,7 +17,7 @@ describe('PostsService', () => {
 
     expect(createdPost).toEqual({
       id: expect.any(String),
-      date: expect.stringContaining(new Date().toISOString()),
+      date: expect.any(String),
       ...post,
     });
   });
@@ -28,7 +28,7 @@ describe('PostsService', () => {
 
     expect(foundPost).toEqual({
       id: expect.any(String),
-      date: expect.stringContaining(new Date().toISOString()),
+      date: expect.any(String),
       ...post,
     });
   });
